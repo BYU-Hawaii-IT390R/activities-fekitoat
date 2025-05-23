@@ -1,0 +1,32 @@
+2 new Task: 
+
+1. Win startup
+Run: python analyze_windows.py --task win-startup
+Output:🚀 Startup items (HKCU\...\Run)
+Name                       Command
+----------------------------------
+OneDrive                   "C:\Users\User1\AppData\Local\Microsoft\OneDrive\OneDrive.exe" /background
+ScreenPal Tray             C:\Program Files\ScreenPal\v3_JRE19\ScreenPal.exe tray
+Docker Desktop             C:\Program Files\Docker\Docker\Docker Desktop.exe
+electron.app.printscout-ui C:\Program Files (x86)\PharosSystems\PrintScout\printscout-ui\printscout-ui.exe 
+
+2. Win Firewall 
+Run:  python analyze_windows.py --task win-firewall
+Output: 🛡️ Inbound firewall rules allowing 0.0.0.0/0
+
+python analyze_windows.py -Help to see current flags.
+Output: usage: analyze_windows.py [-h] --task {win-events,win-pkgs,win-services,win-startup,win-firewall} [--hours HOURS] [--min-count MIN_COUNT]
+                          [--csv FILE] [--watch [SVC ...]] [--fix]
+
+Windows admin toolkit (IT 390R)
+
+options:
+  -h, --help            show this help message and exit
+  --task {win-events,win-pkgs,win-services,win-startup,win-firewall}
+                        Which analysis to run
+  --hours HOURS         Look-back window (win-events)
+  --min-count MIN_COUNT
+                        Min count to show (win-events)
+  --csv FILE            Export to CSV (win-pkgs)
+  --watch [SVC ...]     Service names to check (win-services)
+  --fix                 Attempt to start stopped services (win-services)
